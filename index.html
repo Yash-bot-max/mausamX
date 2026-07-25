@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Images/favicon.png">
+    <title>Mausam X</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="unit-btn">
+            <button class="active">°C</button>
+            <button>°F</button>
+        </div>
+
+        <h1>MausamX</h1>
+        <div class="search-bar">
+            <input class="input" type="text" placeholder="Enter city Name">
+            <div class="seprate">
+                <button class="current"> <span class="material-symbols-outlined">
+                        add_location
+                    </span>My Location</button>
+                <button class="search"><span class="material-symbols-outlined">
+                        search
+                    </span></button>
+            </div>
+        </div>
+        <div class="error">Invalid City Name</div>
+
+        <div id="loading-overlay" class="loading-overlay hidden">
+            <div class="spinner"></div>
+        </div>
+
+        <div class="forecasting">
+            <img class="img" src="Images/clouds.png" alt="">
+            <div class="temp"></div>
+            <div class="feels-like"></div>
+            <div class="Aqi">
+                <span class="material-symbols-outlined">
+                    eco
+                </span>
+
+                <div class="value"></div>
+                <div class="state"></div>
+            </div>
+            <div class="city"></div>
+            <div class="date"></div>
+            <div class="weather"></div>
+
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.svg">
+
+                    <div class="info">
+                        <div class="humidity"></div>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="images/wind.svg">
+                    <div class="info">
+                        <div class="wind"></div>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="more-detail">
+
+            <button class="more">
+                ▼ Weather Details
+                <span class="material-symbols-outlined">
+                    expand_more
+                </span>
+            </button>
+
+            <div class="bottom">
+
+                <div class="row">
+                    <span><span class="material-symbols-outlined">
+                            device_thermostat
+                        </span> Feels Like </span>
+                    <span class="feel-temp">33°C</span>
+                </div>
+
+                <div class="row">
+                    <span><span class="material-symbols-outlined">
+                            visibility
+                        </span> Visibility</span>
+                    <span class="visibility">10 km</span>
+                </div>
+
+                <div class="row">
+                    <span><span class="material-symbols-outlined">
+                            sunny
+                        </span> Sunrise</span>
+                    <span class="sunrise">5:42 AM</span>
+                </div>
+
+                <div class="row">
+                    <span><span class="material-symbols-outlined">
+                            bedtime
+                        </span>Sunset</span>
+                    <span class="sunset">7:15 PM</span>
+                </div>
+
+                <div class="row">
+                    <span><span class="material-symbols-outlined">
+                            compress
+                        </span>Pressure</span>
+                    <span class="pressure">1012 hPa</span>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="hourly-section">
+            <h2>Today's Forecast</h2>
+
+            <div class="hourly-list">
+
+            </div>
+        </div>
+
+        <div class="five-day">
+            <h3>Next 5 Days</h3>
+
+            <div class="forecast-list"></div>
+        </div>
+
+        <div class="recent-section">
+            <h3>Recent Searches</h3>
+
+            <div class="empty-state">
+                <p>No Recent Searches</p>
+                <span>Search for a city to get started.</span>
+            </div>
+
+            <div class="recent-list"> </div>
+        </div>
+        <div class="favorite-section">
+            <h3 class="favorite-heading">⭐ Favorite Cities</h3>
+
+
+            <div class="favorite-list"></div>
+        </div>
+        <button class="theme-btn">
+            🌙
+        </button>
+
+        <footer>
+            <p class="made"> Made with ❤️ by Yash</p>
+            <p class="powered">Weather data provided by OpenWeather</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
